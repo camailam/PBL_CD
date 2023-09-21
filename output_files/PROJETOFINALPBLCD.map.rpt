@@ -1,0 +1,450 @@
+Analysis & Synthesis report for PROJETOFINALPBLCD
+Wed Sep 20 21:02:18 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Sep 20 21:02:17 2023       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; PROJETOFINALPBLCD                           ;
+; Top-level Entity Name       ; main                                        ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 83                                          ;
+; Total pins                  ; 36                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; main               ; PROJETOFINALPBLCD  ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
+; main.v                           ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/main.v                           ;         ;
+; validade_perfil.v                ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/validade_perfil.v                ;         ;
+; validade_perfil1.v               ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/validade_perfil1.v               ;         ;
+; transferencia_bits_perfil.v      ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/transferencia_bits_perfil.v      ;         ;
+; transferencia_bits_perfil1.v     ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/transferencia_bits_perfil1.v     ;         ;
+; funcao_comparacao_perfil.v       ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v       ;         ;
+; funcao_comparacao_perfil1.v      ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v      ;         ;
+; transferencia_bits_funcao.v      ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/transferencia_bits_funcao.v      ;         ;
+; transferencia_bits_funcao1.v     ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/transferencia_bits_funcao1.v     ;         ;
+; igualdade_funcoes.v              ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/igualdade_funcoes.v              ;         ;
+; prioridade.v                     ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/prioridade.v                     ;         ;
+; compara_prioridade_igualdade.v   ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/compara_prioridade_igualdade.v   ;         ;
+; compara_transfere_bits_func.v    ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/compara_transfere_bits_func.v    ;         ;
+; compara_transfere_bits_func1.v   ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/compara_transfere_bits_func1.v   ;         ;
+; qual_interface.v                 ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/qual_interface.v                 ;         ;
+; qual_interface1.v                ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/qual_interface1.v                ;         ;
+; seis_bits_func.v                 ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/seis_bits_func.v                 ;         ;
+; seis_bits_func1.v                ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/seis_bits_func1.v                ;         ;
+; func20.v                         ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/func20.v                         ;         ;
+; func21.v                         ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/func21.v                         ;         ;
+; define_passagem_bits_mostrador.v ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/define_passagem_bits_mostrador.v ;         ;
+; vai_para_decod_mostrador0.v      ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/vai_para_decod_mostrador0.v      ;         ;
+; vai_para_decod_mostrador1.v      ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/vai_para_decod_mostrador1.v      ;         ;
+; bits3mostrador.v                 ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/bits3mostrador.v                 ;         ;
+; decod_mostrador.v                ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/decod_mostrador.v                ;         ;
+; LEDs.v                           ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/LEDs.v                           ;         ;
+; Matriz.v                         ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/Matriz.v                         ;         ;
+; pelo_menos_um_perfil_valido.v    ; yes             ; User Verilog HDL File  ; D:/PROJETOFINALPBL_copy/pelo_menos_um_perfil_valido.v    ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Total logic elements                        ; 83                       ;
+;     -- Combinational with no register       ; 83                       ;
+;     -- Register only                        ; 0                        ;
+;     -- Combinational with a register        ; 0                        ;
+;                                             ;                          ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 57                       ;
+;     -- 3 input functions                    ; 22                       ;
+;     -- 2 input functions                    ; 4                        ;
+;     -- 1 input functions                    ; 0                        ;
+;     -- 0 input functions                    ; 0                        ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 83                       ;
+;     -- arithmetic mode                      ; 0                        ;
+;     -- qfbk mode                            ; 0                        ;
+;     -- register cascade mode                ; 0                        ;
+;     -- synchronous clear/load mode          ; 0                        ;
+;     -- asynchronous clear/load mode         ; 0                        ;
+;                                             ;                          ;
+; Total registers                             ; 0                        ;
+; I/O pins                                    ; 36                       ;
+; Maximum fan-out node                        ; qual_interface:qi0|or0~0 ;
+; Maximum fan-out                             ; 13                       ;
+; Total fan-out                               ; 320                      ;
+; Average fan-out                             ; 2.69                     ;
++---------------------------------------------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                       ;
++------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------+--------------------------------+--------------+
+; Compilation Hierarchy Node               ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                       ; Entity Name                    ; Library Name ;
++------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------+--------------------------------+--------------+
+; |main                                    ; 83 (0)      ; 0            ; 0          ; 36   ; 0            ; 83 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main                                     ; main                           ; work         ;
+;    |LEDs:ledss|                          ; 8 (8)       ; 0            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|LEDs:ledss                          ; LEDs                           ; work         ;
+;    |Matriz:mt|                           ; 14 (14)     ; 0            ; 0          ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Matriz:mt                           ; Matriz                         ; work         ;
+;    |bits3mostrador:b3m|                  ; 9 (9)       ; 0            ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|bits3mostrador:b3m                  ; bits3mostrador                 ; work         ;
+;    |compara_prioridade_igualdade:cpi|    ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|compara_prioridade_igualdade:cpi    ; compara_prioridade_igualdade   ; work         ;
+;    |compara_transfere_bits_func1:ctbf1|  ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|compara_transfere_bits_func1:ctbf1  ; compara_transfere_bits_func1   ; work         ;
+;    |compara_transfere_bits_func:ctbf0|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|compara_transfere_bits_func:ctbf0   ; compara_transfere_bits_func    ; work         ;
+;    |decod_mostrador:dm|                  ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|decod_mostrador:dm                  ; decod_mostrador                ; work         ;
+;    |define_passagem_bits_mostrador:dpbm| ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|define_passagem_bits_mostrador:dpbm ; define_passagem_bits_mostrador ; work         ;
+;    |funcao_comparacao_perfil1:fcp1|      ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|funcao_comparacao_perfil1:fcp1      ; funcao_comparacao_perfil1      ; work         ;
+;    |funcao_comparacao_perfil:fcp0|       ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|funcao_comparacao_perfil:fcp0       ; funcao_comparacao_perfil       ; work         ;
+;    |igualdade_funcoes:i|                 ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|igualdade_funcoes:i                 ; igualdade_funcoes              ; work         ;
+;    |pelo_menos_um_perfil_valido:pmupv|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|pelo_menos_um_perfil_valido:pmupv   ; pelo_menos_um_perfil_valido    ; work         ;
+;    |prioridade:p|                        ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|prioridade:p                        ; prioridade                     ; work         ;
+;    |qual_interface1:qi1|                 ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|qual_interface1:qi1                 ; qual_interface1                ; work         ;
+;    |qual_interface:qi0|                  ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|qual_interface:qi0                  ; qual_interface                 ; work         ;
+;    |seis_bits_func1:sbf1|                ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|seis_bits_func1:sbf1                ; seis_bits_func1                ; work         ;
+;    |seis_bits_func:sbf0|                 ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|seis_bits_func:sbf0                 ; seis_bits_func                 ; work         ;
+;    |vai_para_decod_mostrador0:VPDM0|     ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|vai_para_decod_mostrador0:VPDM0     ; vai_para_decod_mostrador0      ; work         ;
+;    |vai_para_decod_mostrador1:VPDM1|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|vai_para_decod_mostrador1:VPDM1     ; vai_para_decod_mostrador1      ; work         ;
+;    |validade_perfil1:p1|                 ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|validade_perfil1:p1                 ; validade_perfil1               ; work         ;
++------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------+--------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Sep 20 21:02:08 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETOFINALPBLCD2 -c PROJETOFINALPBLCD
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file main.v
+    Info (12023): Found entity 1: main File: D:/PROJETOFINALPBL_copy/main.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file validade_perfil.v
+    Info (12023): Found entity 1: validade_perfil File: D:/PROJETOFINALPBL_copy/validade_perfil.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file validade_perfil1.v
+    Info (12023): Found entity 1: validade_perfil1 File: D:/PROJETOFINALPBL_copy/validade_perfil1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file transferencia_bits_perfil.v
+    Info (12023): Found entity 1: transferencia_bits_perfil File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file transferencia_bits_perfil1.v
+    Info (12023): Found entity 1: transferencia_bits_perfil1 File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file funcao_comparacao_perfil.v
+    Info (12023): Found entity 1: funcao_comparacao_perfil File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file funcao_comparacao_perfil1.v
+    Info (12023): Found entity 1: funcao_comparacao_perfil1 File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file transferencia_bits_funcao.v
+    Info (12023): Found entity 1: transferencia_bits_funcao File: D:/PROJETOFINALPBL_copy/transferencia_bits_funcao.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file transferencia_bits_funcao1.v
+    Info (12023): Found entity 1: transferencia_bits_funcao1 File: D:/PROJETOFINALPBL_copy/transferencia_bits_funcao1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file igualdade_funcoes.v
+    Info (12023): Found entity 1: igualdade_funcoes File: D:/PROJETOFINALPBL_copy/igualdade_funcoes.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file prioridade.v
+    Info (12023): Found entity 1: prioridade File: D:/PROJETOFINALPBL_copy/prioridade.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file compara_prioridade_igualdade.v
+    Info (12023): Found entity 1: compara_prioridade_igualdade File: D:/PROJETOFINALPBL_copy/compara_prioridade_igualdade.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file compara_transfere_bits_func.v
+    Info (12023): Found entity 1: compara_transfere_bits_func File: D:/PROJETOFINALPBL_copy/compara_transfere_bits_func.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file compara_transfere_bits_func1.v
+    Info (12023): Found entity 1: compara_transfere_bits_func1 File: D:/PROJETOFINALPBL_copy/compara_transfere_bits_func1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file qual_interface.v
+    Info (12023): Found entity 1: qual_interface File: D:/PROJETOFINALPBL_copy/qual_interface.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file qual_interface1.v
+    Info (12023): Found entity 1: qual_interface1 File: D:/PROJETOFINALPBL_copy/qual_interface1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seis_bits_func.v
+    Info (12023): Found entity 1: seis_bits_func File: D:/PROJETOFINALPBL_copy/seis_bits_func.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seis_bits_func1.v
+    Info (12023): Found entity 1: seis_bits_func1 File: D:/PROJETOFINALPBL_copy/seis_bits_func1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file func20.v
+    Info (12023): Found entity 1: func20 File: D:/PROJETOFINALPBL_copy/func20.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file func21.v
+    Info (12023): Found entity 1: func21 File: D:/PROJETOFINALPBL_copy/func21.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file define_passagem_bits_mostrador.v
+    Info (12023): Found entity 1: define_passagem_bits_mostrador File: D:/PROJETOFINALPBL_copy/define_passagem_bits_mostrador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vai_para_decod_mostrador0.v
+    Info (12023): Found entity 1: vai_para_decod_mostrador0 File: D:/PROJETOFINALPBL_copy/vai_para_decod_mostrador0.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vai_para_decod_mostrador1.v
+    Info (12023): Found entity 1: vai_para_decod_mostrador1 File: D:/PROJETOFINALPBL_copy/vai_para_decod_mostrador1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bits3mostrador.v
+    Info (12023): Found entity 1: bits3mostrador File: D:/PROJETOFINALPBL_copy/bits3mostrador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decod_mostrador.v
+    Info (12023): Found entity 1: decod_mostrador File: D:/PROJETOFINALPBL_copy/decod_mostrador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file leds.v
+    Info (12023): Found entity 1: LEDs File: D:/PROJETOFINALPBL_copy/LEDs.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file matriz.v
+    Info (12023): Found entity 1: Matriz File: D:/PROJETOFINALPBL_copy/Matriz.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pelo_menos_um_perfil_valido.v
+    Info (12023): Found entity 1: pelo_menos_um_perfil_valido File: D:/PROJETOFINALPBL_copy/pelo_menos_um_perfil_valido.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at validade_perfil.v(6): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/validade_perfil.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at validade_perfil.v(8): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/validade_perfil.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at validade_perfil.v(10): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/validade_perfil.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at validade_perfil1.v(6): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/validade_perfil1.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at validade_perfil1.v(8): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/validade_perfil1.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at validade_perfil1.v(10): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/validade_perfil1.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil.v(9): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil1.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil1.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil1.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil1.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil1.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil1.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_perfil1.v(9): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_perfil1.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil.v(7): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil.v(8): created implicit net for "f1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil.v(9): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil.v(10): created implicit net for "e1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil.v(11): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil1.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil1.v(7): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil1.v(8): created implicit net for "f1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil1.v(9): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil1.v(10): created implicit net for "e1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at funcao_comparacao_perfil1.v(11): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/funcao_comparacao_perfil1.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_funcao.v(7): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_funcao.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at transferencia_bits_funcao1.v(7): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/transferencia_bits_funcao1.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at igualdade_funcoes.v(6): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/igualdade_funcoes.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at igualdade_funcoes.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/igualdade_funcoes.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at igualdade_funcoes.v(8): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/igualdade_funcoes.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at igualdade_funcoes.v(9): created implicit net for "f1" File: D:/PROJETOFINALPBL_copy/igualdade_funcoes.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at igualdade_funcoes.v(10): created implicit net for "e1" File: D:/PROJETOFINALPBL_copy/igualdade_funcoes.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at igualdade_funcoes.v(11): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/igualdade_funcoes.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at prioridade.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/prioridade.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at prioridade.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/prioridade.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at prioridade.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/prioridade.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at prioridade.v(9): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/prioridade.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at prioridade.v(10): created implicit net for "e1" File: D:/PROJETOFINALPBL_copy/prioridade.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at prioridade.v(11): created implicit net for "f1" File: D:/PROJETOFINALPBL_copy/prioridade.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at compara_prioridade_igualdade.v(7): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/compara_prioridade_igualdade.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at compara_transfere_bits_func.v(8): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/compara_transfere_bits_func.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at compara_transfere_bits_func1.v(8): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/compara_transfere_bits_func1.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at qual_interface.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/qual_interface.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at qual_interface.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/qual_interface.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at qual_interface.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/qual_interface.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at qual_interface1.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/qual_interface1.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at qual_interface1.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/qual_interface1.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at qual_interface1.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/qual_interface1.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at seis_bits_func.v(6): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/seis_bits_func.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at seis_bits_func1.v(6): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/seis_bits_func1.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at func20.v(5): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/func20.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at func20.v(6): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/func20.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at func21.v(5): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/func21.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at func21.v(6): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/func21.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at define_passagem_bits_mostrador.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/define_passagem_bits_mostrador.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at define_passagem_bits_mostrador.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/define_passagem_bits_mostrador.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at define_passagem_bits_mostrador.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/define_passagem_bits_mostrador.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at define_passagem_bits_mostrador.v(9): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/define_passagem_bits_mostrador.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at bits3mostrador.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/bits3mostrador.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at bits3mostrador.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/bits3mostrador.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at bits3mostrador.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/bits3mostrador.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at bits3mostrador.v(9): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/bits3mostrador.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at bits3mostrador.v(10): created implicit net for "e1" File: D:/PROJETOFINALPBL_copy/bits3mostrador.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at bits3mostrador.v(11): created implicit net for "f1" File: D:/PROJETOFINALPBL_copy/bits3mostrador.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at decod_mostrador.v(18): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/decod_mostrador.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at decod_mostrador.v(19): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/decod_mostrador.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at decod_mostrador.v(20): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/decod_mostrador.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at decod_mostrador.v(21): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/decod_mostrador.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at LEDs.v(7): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/LEDs.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at LEDs.v(8): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/LEDs.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at LEDs.v(9): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/LEDs.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at LEDs.v(10): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/LEDs.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at LEDs.v(11): created implicit net for "e1" File: D:/PROJETOFINALPBL_copy/LEDs.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at LEDs.v(12): created implicit net for "f1" File: D:/PROJETOFINALPBL_copy/LEDs.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at Matriz.v(6): created implicit net for "a1" File: D:/PROJETOFINALPBL_copy/Matriz.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at Matriz.v(7): created implicit net for "b1" File: D:/PROJETOFINALPBL_copy/Matriz.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at Matriz.v(8): created implicit net for "c1" File: D:/PROJETOFINALPBL_copy/Matriz.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at Matriz.v(9): created implicit net for "d1" File: D:/PROJETOFINALPBL_copy/Matriz.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at Matriz.v(10): created implicit net for "e1" File: D:/PROJETOFINALPBL_copy/Matriz.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at Matriz.v(11): created implicit net for "f1" File: D:/PROJETOFINALPBL_copy/Matriz.v Line: 11
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Info (12128): Elaborating entity "validade_perfil" for hierarchy "validade_perfil:p0" File: D:/PROJETOFINALPBL_copy/main.v Line: 42
+Info (12128): Elaborating entity "validade_perfil1" for hierarchy "validade_perfil1:p1" File: D:/PROJETOFINALPBL_copy/main.v Line: 48
+Info (12128): Elaborating entity "transferencia_bits_perfil" for hierarchy "transferencia_bits_perfil:tp0" File: D:/PROJETOFINALPBL_copy/main.v Line: 55
+Info (12128): Elaborating entity "transferencia_bits_perfil1" for hierarchy "transferencia_bits_perfil1:tp1" File: D:/PROJETOFINALPBL_copy/main.v Line: 62
+Info (12128): Elaborating entity "funcao_comparacao_perfil" for hierarchy "funcao_comparacao_perfil:fcp0" File: D:/PROJETOFINALPBL_copy/main.v Line: 71
+Info (12128): Elaborating entity "funcao_comparacao_perfil1" for hierarchy "funcao_comparacao_perfil1:fcp1" File: D:/PROJETOFINALPBL_copy/main.v Line: 80
+Info (12128): Elaborating entity "transferencia_bits_funcao" for hierarchy "transferencia_bits_funcao:tf0" File: D:/PROJETOFINALPBL_copy/main.v Line: 87
+Info (12128): Elaborating entity "transferencia_bits_funcao1" for hierarchy "transferencia_bits_funcao1:tf1" File: D:/PROJETOFINALPBL_copy/main.v Line: 94
+Info (12128): Elaborating entity "igualdade_funcoes" for hierarchy "igualdade_funcoes:i" File: D:/PROJETOFINALPBL_copy/main.v Line: 103
+Info (12128): Elaborating entity "prioridade" for hierarchy "prioridade:p" File: D:/PROJETOFINALPBL_copy/main.v Line: 113
+Info (12128): Elaborating entity "compara_prioridade_igualdade" for hierarchy "compara_prioridade_igualdade:cpi" File: D:/PROJETOFINALPBL_copy/main.v Line: 120
+Info (12128): Elaborating entity "compara_transfere_bits_func" for hierarchy "compara_transfere_bits_func:ctbf0" File: D:/PROJETOFINALPBL_copy/main.v Line: 127
+Info (12128): Elaborating entity "compara_transfere_bits_func1" for hierarchy "compara_transfere_bits_func1:ctbf1" File: D:/PROJETOFINALPBL_copy/main.v Line: 134
+Info (12128): Elaborating entity "qual_interface" for hierarchy "qual_interface:qi0" File: D:/PROJETOFINALPBL_copy/main.v Line: 140
+Info (12128): Elaborating entity "qual_interface1" for hierarchy "qual_interface1:qi1" File: D:/PROJETOFINALPBL_copy/main.v Line: 146
+Info (12128): Elaborating entity "seis_bits_func" for hierarchy "seis_bits_func:sbf0" File: D:/PROJETOFINALPBL_copy/main.v Line: 153
+Info (12128): Elaborating entity "seis_bits_func1" for hierarchy "seis_bits_func1:sbf1" File: D:/PROJETOFINALPBL_copy/main.v Line: 160
+Info (12128): Elaborating entity "func20" for hierarchy "func20:f20" File: D:/PROJETOFINALPBL_copy/main.v Line: 166
+Info (12128): Elaborating entity "func21" for hierarchy "func21:f21" File: D:/PROJETOFINALPBL_copy/main.v Line: 172
+Info (12128): Elaborating entity "define_passagem_bits_mostrador" for hierarchy "define_passagem_bits_mostrador:dpbm" File: D:/PROJETOFINALPBL_copy/main.v Line: 180
+Info (12128): Elaborating entity "vai_para_decod_mostrador0" for hierarchy "vai_para_decod_mostrador0:VPDM0" File: D:/PROJETOFINALPBL_copy/main.v Line: 187
+Info (12128): Elaborating entity "vai_para_decod_mostrador1" for hierarchy "vai_para_decod_mostrador1:VPDM1" File: D:/PROJETOFINALPBL_copy/main.v Line: 194
+Info (12128): Elaborating entity "bits3mostrador" for hierarchy "bits3mostrador:b3m" File: D:/PROJETOFINALPBL_copy/main.v Line: 203
+Info (12128): Elaborating entity "pelo_menos_um_perfil_valido" for hierarchy "pelo_menos_um_perfil_valido:pmupv" File: D:/PROJETOFINALPBL_copy/main.v Line: 208
+Info (12128): Elaborating entity "decod_mostrador" for hierarchy "decod_mostrador:dm" File: D:/PROJETOFINALPBL_copy/main.v Line: 215
+Info (12128): Elaborating entity "LEDs" for hierarchy "LEDs:ledss" File: D:/PROJETOFINALPBL_copy/main.v Line: 224
+Info (12128): Elaborating entity "Matriz" for hierarchy "Matriz:mt" File: D:/PROJETOFINALPBL_copy/main.v Line: 233
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "saidas[6]" is stuck at VCC File: D:/PROJETOFINALPBL_copy/main.v Line: 4
+    Warning (13410): Pin "saidas[19]" is stuck at VCC File: D:/PROJETOFINALPBL_copy/main.v Line: 4
+    Warning (13410): Pin "saidas[20]" is stuck at VCC File: D:/PROJETOFINALPBL_copy/main.v Line: 4
+    Warning (13410): Pin "saidas[21]" is stuck at VCC File: D:/PROJETOFINALPBL_copy/main.v Line: 4
+    Warning (13410): Pin "saidas[22]" is stuck at VCC File: D:/PROJETOFINALPBL_copy/main.v Line: 4
+    Warning (13410): Pin "saidas[23]" is stuck at VCC File: D:/PROJETOFINALPBL_copy/main.v Line: 4
+Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 83 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4707 megabytes
+    Info: Processing ended: Wed Sep 20 21:02:18 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:18
+
+

@@ -1,0 +1,102 @@
+Restore Archived Project report for PROJETOFINALPBLCD
+Wed Sep 20 21:00:06 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Sep 20 21:00:06 2023 ;
+; Revision Name                   ; PROJETOFINALPBLCD                     ;
+; Top-level Entity Name           ; main                                  ;
+; Family                          ; MAX II                                ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'D:/PROJETOFINALPBL/PROJETOFINALPBLCD_tmp_archive.qar' into the 'D:/PROJETOFINALPBL_copy/' directory
+Info: Generated report 'PROJETOFINALPBLCD.restore.rpt'
+
+
++----------------------------------+
+; Files Restored                   ;
++----------------------------------+
+; File Name                        ;
++----------------------------------+
+; qar_info.json                    ;
+; LEDs.v                           ;
+; Matriz.v                         ;
+; PROJETOFINALPBLCD.qpf            ;
+; PROJETOFINALPBLCD.qsf            ;
+; Waveform.vwf                     ;
+; Waveform1.vwf                    ;
+; bits3mostrador.v                 ;
+; compara_prioridade_igualdade.v   ;
+; compara_transfere_bits_func.v    ;
+; compara_transfere_bits_func1.v   ;
+; decod_mostrador.v                ;
+; define_passagem_bits_mostrador.v ;
+; func20.v                         ;
+; func21.v                         ;
+; funcao_comparacao_perfil.v       ;
+; funcao_comparacao_perfil1.v      ;
+; igualdade_funcoes.v              ;
+; main.v                           ;
+; pelo_menos_um_perfil_valido.v    ;
+; prioridade.v                     ;
+; qual_interface.v                 ;
+; qual_interface1.v                ;
+; seis_bits_func.v                 ;
+; seis_bits_func1.v                ;
+; transferencia_bits_funcao.v      ;
+; transferencia_bits_funcao1.v     ;
+; transferencia_bits_perfil.v      ;
+; transferencia_bits_perfil1.v     ;
+; vai_para_decod_mostrador0.v      ;
+; vai_para_decod_mostrador1.v      ;
+; validade_perfil.v                ;
+; validade_perfil1.v               ;
+; assignment_defaults.qdf          ;
++----------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

@@ -1,0 +1,601 @@
+|main
+entradas[0] => entradas[0].IN2
+entradas[1] => entradas[1].IN2
+entradas[2] => entradas[2].IN2
+entradas[3] => entradas[3].IN2
+entradas[4] => entradas[4].IN2
+entradas[5] => entradas[5].IN2
+entradas[6] => entradas[6].IN2
+entradas[7] => entradas[7].IN2
+entradas[8] => entradas[8].IN2
+entradas[9] => entradas[9].IN2
+entradas[10] => entradas[10].IN2
+entradas[11] => entradas[11].IN2
+saidas[0] <= Matriz:mt.matriz
+saidas[1] <= Matriz:mt.matriz
+saidas[2] <= Matriz:mt.matriz
+saidas[3] <= Matriz:mt.matriz
+saidas[4] <= Matriz:mt.matriz
+saidas[5] <= Matriz:mt.matriz
+saidas[6] <= Matriz:mt.matriz
+saidas[7] <= Matriz:mt.matriz
+saidas[8] <= LEDs:ledss.leds
+saidas[9] <= LEDs:ledss.leds
+saidas[10] <= LEDs:ledss.leds
+saidas[11] <= LEDs:ledss.leds
+saidas[12] <= decod_mostrador:dm.decod7seg
+saidas[13] <= decod_mostrador:dm.decod7seg
+saidas[14] <= decod_mostrador:dm.decod7seg
+saidas[15] <= decod_mostrador:dm.decod7seg
+saidas[16] <= decod_mostrador:dm.decod7seg
+saidas[17] <= decod_mostrador:dm.decod7seg
+saidas[18] <= decod_mostrador:dm.decod7seg
+saidas[19] <= decod_mostrador:dm.decod7seg
+saidas[20] <= decod_mostrador:dm.decod7seg
+saidas[21] <= decod_mostrador:dm.decod7seg
+saidas[22] <= decod_mostrador:dm.decod7seg
+saidas[23] <= decod_mostrador:dm.decod7seg
+
+
+|main|validade_perfil:p0
+a => and2.IN0
+a => and1.IN0
+b => and2.IN1
+b => and0.IN0
+c => and0.IN1
+c => and1.IN1
+c => and2.IN2
+l <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|validade_perfil1:p1
+a => and2.IN0
+a => and1.IN0
+b => and2.IN1
+b => and0.IN0
+c => and0.IN1
+c => and1.IN1
+c => and2.IN2
+l <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|transferencia_bits_perfil:tp0
+a => and1.IN0
+a => and2.IN0
+a => and4.IN0
+a => and5.IN0
+b => and2.IN1
+b => and3.IN0
+c => and4.IN1
+c => and5.IN1
+c => and1.IN1
+c => and3.IN1
+d => and1.IN2
+d => and2.IN2
+d => and3.IN2
+d => and4.IN2
+d => and5.IN2
+transbitsperfil[0] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+transbitsperfil[1] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+transbitsperfil[2] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|transferencia_bits_perfil1:tp1
+a => and1.IN0
+a => and2.IN0
+a => and4.IN0
+a => and5.IN0
+b => and2.IN1
+b => and3.IN0
+c => and4.IN1
+c => and5.IN1
+c => and1.IN1
+c => and3.IN1
+d => and1.IN2
+d => and2.IN2
+d => and3.IN2
+d => and4.IN2
+d => and5.IN2
+transbitsperfil1[0] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+transbitsperfil1[1] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+transbitsperfil1[2] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|funcao_comparacao_perfil:fcp0
+a => and3.IN0
+b => and4.IN0
+b => and5.IN0
+b => and3.IN1
+c => and0.IN0
+c => and1.IN0
+c => and2.IN0
+d => and2.IN1
+d => and5.IN1
+d => and0.IN1
+d => and1.IN1
+d => and4.IN1
+e => and4.IN2
+e => and0.IN2
+e => and5.IN2
+f => and2.IN2
+f => and5.IN3
+f => and1.IN2
+f => and3.IN2
+f => and4.IN3
+funcCompPerfil <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|funcao_comparacao_perfil1:fcp1
+a => and3.IN0
+b => and4.IN0
+b => and5.IN0
+b => and3.IN1
+c => and0.IN0
+c => and1.IN0
+c => and2.IN0
+d => and2.IN1
+d => and5.IN1
+d => and0.IN1
+d => and1.IN1
+d => and4.IN1
+e => and4.IN2
+e => and0.IN2
+e => and5.IN2
+f => and2.IN2
+f => and5.IN3
+f => and1.IN2
+f => and3.IN2
+f => and4.IN3
+funcCompPerfil1 <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|transferencia_bits_funcao:tf0
+a => and0.IN0
+b => or0.IN0
+c => or1.IN0
+d => and0.IN1
+d => or0.IN1
+d => or1.IN1
+transbitsfunc[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+transbitsfunc[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+transbitsfunc[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|transferencia_bits_funcao1:tf1
+a => and0.IN0
+b => or0.IN0
+c => or1.IN0
+d => and0.IN1
+d => or0.IN1
+d => or1.IN1
+transbitsfunc1[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+transbitsfunc1[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+transbitsfunc1[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|igualdade_funcoes:i
+a => and5.IN0
+a => and2.IN0
+b => and4.IN0
+b => and1.IN0
+c => and3.IN0
+c => and0.IN0
+d => and2.IN1
+d => and5.IN1
+e => and1.IN1
+e => and4.IN1
+f => and0.IN1
+f => and3.IN1
+igualdade <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|prioridade:p
+a => and1.IN0
+a => and5.IN0
+a => and6.IN0
+a => and12.IN0
+a => and13.IN0
+a => and0.IN0
+a => and2.IN0
+a => and3.IN0
+a => and4.IN0
+a => and9.IN0
+a => and10.IN0
+b => and4.IN1
+b => and5.IN1
+b => and6.IN1
+b => and12.IN1
+b => and13.IN1
+b => and1.IN1
+b => and9.IN1
+c => and0.IN1
+c => and1.IN2
+c => and2.IN1
+c => and3.IN1
+c => and4.IN2
+c => and5.IN2
+c => and6.IN2
+c => and7.IN0
+c => and11.IN0
+d => and3.IN2
+d => and6.IN3
+d => and8.IN0
+d => and11.IN1
+d => and13.IN2
+d => and2.IN2
+d => and4.IN3
+d => and7.IN1
+d => and9.IN2
+d => and10.IN1
+d => and12.IN2
+e => and3.IN3
+e => and6.IN4
+e => and10.IN2
+e => and11.IN2
+e => and13.IN3
+e => and2.IN3
+e => and8.IN1
+f => and7.IN2
+f => and8.IN2
+f => and9.IN3
+f => and10.IN3
+f => and12.IN3
+f => and0.IN2
+f => and5.IN3
+f => and11.IN3
+f => and13.IN4
+prioridade0 <= or0.DB_MAX_OUTPUT_PORT_TYPE
+prioridade1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|compara_prioridade_igualdade:cpi
+a => or0.IN1
+a => and1.IN0
+a => and2.IN0
+b => and0.IN0
+b => and2.IN1
+c => and0.IN1
+c => and1.IN1
+prioridadefinal0 <= or0.DB_MAX_OUTPUT_PORT_TYPE
+prioridadefinal1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|compara_transfere_bits_func:ctbf0
+a => and0.IN0
+b => or0.IN0
+c => or1.IN0
+d => and0.IN1
+d => or0.IN1
+d => or1.IN1
+bitsfuncfinal[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+bitsfuncfinal[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+bitsfuncfinal[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|compara_transfere_bits_func1:ctbf1
+a => and0.IN0
+b => or0.IN0
+c => or1.IN0
+d => and0.IN1
+d => or0.IN1
+d => or1.IN1
+bitsfuncfinal1[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+bitsfuncfinal1[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+bitsfuncfinal1[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|qual_interface:qi0
+a => and1.IN0
+a => and0.IN0
+b => and1.IN1
+b => and0.IN1
+c => and0.IN2
+c => and1.IN2
+qualinterface <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|qual_interface1:qi1
+a => and1.IN0
+a => and0.IN0
+b => and1.IN1
+b => and0.IN1
+c => and0.IN2
+c => and1.IN2
+qualinterface1 <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|seis_bits_func:sbf0
+a => and0.IN0
+a => and1.IN0
+b => or0.IN0
+b => or2.IN0
+c => or1.IN0
+c => or3.IN0
+d => or0.IN1
+d => or1.IN1
+d => and1.IN1
+d => and0.IN1
+d => or2.IN1
+d => or3.IN1
+seis_bits[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits[3] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits[4] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits[5] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|seis_bits_func1:sbf1
+a => and0.IN0
+a => and1.IN0
+b => or0.IN0
+b => or2.IN0
+c => or1.IN0
+c => or3.IN0
+d => or0.IN1
+d => or1.IN1
+d => and1.IN1
+d => and0.IN1
+d => or2.IN1
+d => or3.IN1
+seis_bits1[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits1[1] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits1[2] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits1[3] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits1[4] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+seis_bits1[5] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|func20:f20
+a => and0.IN0
+b => and0.IN1
+c => and0.IN2
+funcc20 <= and0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|func21:f21
+a => and0.IN0
+b => and0.IN1
+c => and0.IN2
+funcc21 <= and0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|define_passagem_bits_mostrador:dpbm
+a => and2.IN0
+a => and3.IN0
+a => and1.IN0
+b => and0.IN0
+b => and1.IN1
+b => and3.IN1
+c => and1.IN2
+c => and2.IN1
+c => and0.IN1
+d => and0.IN2
+d => and3.IN2
+d => and2.IN2
+bits_mostrador <= or0.DB_MAX_OUTPUT_PORT_TYPE
+bits_mostrador1 <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|vai_para_decod_mostrador0:VPDM0
+a => and0.IN0
+b => and1.IN0
+c => and2.IN0
+d => and0.IN1
+d => and1.IN1
+d => and2.IN1
+vaiParaDecod7SEG[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+vaiParaDecod7SEG[1] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+vaiParaDecod7SEG[2] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|vai_para_decod_mostrador1:VPDM1
+a => and0.IN0
+b => and1.IN0
+c => and2.IN0
+d => and0.IN1
+d => and1.IN1
+d => and2.IN1
+vaiParaDecod7SEG1[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+vaiParaDecod7SEG1[1] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+vaiParaDecod7SEG1[2] <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bits3mostrador:b3m
+a => and2.IN0
+a => and7.IN0
+a => and0.IN0
+a => and1.IN0
+a => and4.IN0
+a => and5.IN0
+a => and6.IN0
+a => and8.IN0
+a => and9.IN0
+a => and10.IN0
+b => and6.IN1
+b => and7.IN1
+b => and0.IN1
+b => and1.IN1
+b => and2.IN1
+b => and4.IN1
+b => and5.IN1
+b => and8.IN1
+b => and9.IN1
+b => and11.IN0
+c => and2.IN2
+c => and6.IN2
+c => and10.IN1
+c => and11.IN1
+c => and0.IN2
+c => and1.IN2
+c => and4.IN2
+c => and5.IN2
+c => and7.IN2
+c => and8.IN2
+c => and9.IN2
+d => and0.IN3
+d => and1.IN3
+d => and5.IN3
+d => and2.IN3
+d => and4.IN3
+d => and6.IN3
+d => and7.IN3
+d => and8.IN3
+d => and10.IN2
+d => and11.IN2
+e => and1.IN4
+e => and4.IN4
+e => and5.IN4
+e => and0.IN4
+e => and2.IN4
+e => and6.IN4
+e => and7.IN4
+e => and9.IN3
+e => and10.IN3
+e => and11.IN3
+f => and0.IN5
+f => and4.IN5
+f => and8.IN4
+f => and9.IN4
+f => and1.IN5
+f => and2.IN5
+f => and5.IN5
+f => and6.IN5
+f => and7.IN5
+f => and10.IN4
+f => and11.IN4
+bits3[0] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+bits3[1] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+bits3[2] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|pelo_menos_um_perfil_valido:pmupv
+a => or0.IN0
+b => or0.IN1
+validademostrador <= or0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|decod_mostrador:dm
+a => and5.IN0
+a => and0.IN0
+a => and3.IN0
+a => and4.IN0
+a => and6.IN0
+a => and7.IN0
+a => and8.IN0
+b => and2.IN0
+b => and4.IN1
+b => and0.IN1
+b => and5.IN1
+c => and1.IN0
+c => and3.IN1
+c => and6.IN1
+c => and7.IN1
+d => and0.IN2
+d => and1.IN1
+d => and2.IN1
+d => and6.IN2
+d => and7.IN2
+d => and8.IN1
+d => or1.IN2
+d => or2.IN3
+decod7seg[0] <= <VCC>
+decod7seg[1] <= <VCC>
+decod7seg[2] <= <VCC>
+decod7seg[3] <= <VCC>
+decod7seg[4] <= <VCC>
+decod7seg[5] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+decod7seg[6] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+decod7seg[7] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+decod7seg[8] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+decod7seg[9] <= and6.DB_MAX_OUTPUT_PORT_TYPE
+decod7seg[10] <= and7.DB_MAX_OUTPUT_PORT_TYPE
+decod7seg[11] <= and8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|LEDs:ledss
+a => and5.IN0
+a => and7.IN0
+a => and1.IN0
+a => and2.IN0
+b => and1.IN1
+b => and5.IN1
+b => and2.IN1
+b => and7.IN1
+c => and5.IN2
+c => and7.IN2
+c => and1.IN2
+c => and2.IN2
+d => and4.IN0
+d => and6.IN0
+d => and0.IN0
+d => and3.IN0
+e => and0.IN1
+e => and4.IN1
+e => and3.IN1
+e => and6.IN1
+f => and4.IN2
+f => and6.IN2
+f => and0.IN2
+f => and3.IN2
+leds[0] <= or0.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|Matriz:mt
+a => or1.IN0
+a => or2.IN0
+a => or3.IN0
+a => or13.IN0
+a => or6.IN0
+a => or8.IN0
+a => or10.IN0
+a => or12.IN0
+b => or3.IN1
+b => or10.IN1
+b => or12.IN1
+b => or1.IN1
+b => or2.IN1
+b => or6.IN1
+b => or8.IN1
+c => or1.IN2
+c => or3.IN2
+c => or8.IN2
+c => or12.IN2
+c => or6.IN2
+c => or10.IN2
+c => or13.IN1
+d => or0.IN0
+d => or2.IN2
+d => or4.IN0
+d => or13.IN2
+d => or5.IN0
+d => or7.IN0
+d => or9.IN0
+d => or11.IN0
+e => or4.IN1
+e => or9.IN1
+e => or11.IN1
+e => or0.IN1
+e => or5.IN1
+e => or7.IN1
+f => or0.IN2
+f => or2.IN3
+f => or4.IN2
+f => or7.IN2
+f => or11.IN2
+f => or5.IN2
+f => or9.IN2
+f => or13.IN3
+matriz[0] <= and0.DB_MAX_OUTPUT_PORT_TYPE
+matriz[1] <= <VCC>
+matriz[2] <= and1.DB_MAX_OUTPUT_PORT_TYPE
+matriz[3] <= and3.DB_MAX_OUTPUT_PORT_TYPE
+matriz[4] <= and4.DB_MAX_OUTPUT_PORT_TYPE
+matriz[5] <= and5.DB_MAX_OUTPUT_PORT_TYPE
+matriz[6] <= and6.DB_MAX_OUTPUT_PORT_TYPE
+matriz[7] <= or13.DB_MAX_OUTPUT_PORT_TYPE
+
+
